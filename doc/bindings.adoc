@@ -1,0 +1,47 @@
+
+[[bindings]]
+== Bindings
+
+[[load]]
+* <<font, _font_>> = *load*(_fontname_, [_pow2_]) +
+[small]#Loads the font named _fontname_ (a string), or _nil_ if the font is not available, and returns
+a table with the properties of the font face, the texture atlas, and the metrics for rendering individual characters. +
+Pass _pow2_=_true_ if you want the image dimensions to be powers of 2.#
+
+[[list]]
+* {_fontname_} = *list*(&nbsp;) +
+[small]#Returns a list with the names (strings) of the available fonts.#
+
+[[is_available]]
+* _boolean_ = *is_available*(_fontname_) +
+[small]#Returns _true_ if the font named _fontname_ is available, _false_ otherwise.#
+
+NOTE: For *_fontname_* for the font implemented in the _stb_font_xxx.inl_ file is '_xxx_'
+(e.g. the name for the font implemented in _stb_font_consolas_24_latin1.inl_ is '_consolas_24_latin1_').
+
+
+'''
+
+[[font]]
+[small]#*font* = { +
+_name_: string, +
+_num_chars_: integer, +
+_width_: integer, +
+_height_: integer, +
+_pixels_: binary string (texture atlas, _width_ x _height_ bytes), +
+_line_spacing_: integer, +
+_fontchar_: {<<fontchar, fontchar>>} (indexed by codepoint), +
+}#
+
+[[fontchar]]
+[small]#*fontchar* = { +
+_codepoint_: integer, +
+_s0_, _t0_, _s1_, _t1_: number, +
+_x0_, _y0_, _x1_, _y1_: number, +
+_advance_: number, +
+_s0f_, _t0f_, _s1f_, _t1f_: number, +
+_x0f_, _y0f_, _x1f_, _y1f_: number, +
+_advancef_: number, +
+} (Rfr: _stb_fontchar_)#
+
+

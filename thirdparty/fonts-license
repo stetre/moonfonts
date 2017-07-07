@@ -1,0 +1,18 @@
+The font files (fonts/*.inl) are taken from:
+http://nothings.org/stb/font/
+
+According to the same source, all the contained code is in the public domain
+(below is a copy of the statement).
+
+Stefano Trettel
+
+===========================================================================
+
+"All code is in the public domain. According to my best understanding of the law, 
+digital outline fonts are programs and hence copyrightable, but the underlying 
+typeface, and bitmaps created from the typeface, are not copyrightable. 
+Therefore the copyright on the fonts used to create these bitmap fonts does not 
+apply to these bitmaps, thus the entirety of the .inl files are in the public 
+domain. For more information, see
+https://en.wikipedia.org/wiki/Adobe_Systems,_Inc._v._Southern_Software,_Inc."
+
