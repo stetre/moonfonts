@@ -2,7 +2,7 @@
 
 MoonFonts is a Lua binding library for Sean Barrett's [Bitmap fonts for C/C++ 3D programmers](http://nothings.org/stb/font).
 
-It runs on GNU/Linux <!-- and on Windows (MSYS2/MinGW) --> and requires 
+It runs on GNU/Linux and on Windows (MSYS2/MinGW) and requires
 [Lua](http://www.lua.org/) (>=5.3).
 
 _Author:_ _[Stefano Trettel](https://www.linkedin.com/in/stetre)_

@@ -29,6 +29,12 @@ ifeq ($(D),1)
 DEBUG=1
 endif
 
+ifdef LINUX
+endif
+ifdef MINGW
+LIBS = -llua
+endif
+
 Tgt	:= moonfonts
 Src := $(wildcard *.c)
 Objs := $(Src:.c=.o)
